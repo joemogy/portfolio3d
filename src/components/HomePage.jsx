@@ -42,7 +42,7 @@ export default function HomePage() {
                             },
                             repulse: {
                                 duration: 0.6,
-                                distance: 333,
+                                distance: 199,
                             },
                         },
                     },
@@ -57,7 +57,7 @@ export default function HomePage() {
                             enable: true,
                             width: 1,
                             opacity: 1,
-                            distance: 99,
+                            distance: 233,
                            
                         },
                         move: {
@@ -77,15 +77,17 @@ export default function HomePage() {
                             value: 99,
                             density: {
                                 enable: true,
-                                area: 666,
+                                area: 800,
                             },
                         },
                         shape: {
                             type: "torus",
+                            type: "circle",
+                            
                         },
                         size: {
                             min: 1,
-                            max: 3,
+                            max: 6,
                         },
                     },
                     detectRetina: true,
