@@ -24,7 +24,7 @@ export default function HomePage() {
                             value: "#202020",
                         },
                     },
-                    fpsLimit: 120,
+                    fpsLimit: 60,
                     interactivity: {
                         events: {
                             onClick: {
@@ -38,11 +38,11 @@ export default function HomePage() {
                         },
                         modes: {
                             push: {
-                                quantity: 6,
+                                quantity: 3,
                             },
                             repulse: {
                                 duration: 0.6,
-                                distance: 199,
+                                distance: 333,
                             },
                         },
                     },
@@ -52,12 +52,12 @@ export default function HomePage() {
                         },
                         links: {
                             color: {
-                                value: "#f77839", 
+                                value: "#ff1122", 
                             },
                             enable: true,
                             width: 1,
                             opacity: 1,
-                            distance: 150,
+                            distance: 99,
                            
                         },
                         move: {
@@ -74,14 +74,14 @@ export default function HomePage() {
                             enable: true,
                         },
                         number: {
-                            value: 80,
+                            value: 99,
                             density: {
                                 enable: true,
-                                area: 800,
+                                area: 666,
                             },
                         },
                         shape: {
-                            type: "circle",
+                            type: "torus",
                         },
                         size: {
                             min: 1,
