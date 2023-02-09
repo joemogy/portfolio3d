@@ -5,11 +5,12 @@ import { loadFull } from "tsparticles";
 export default function HomePage() {
     const particlesInit = useCallback(async engine => {
         await loadFull(engine);
-    }, []);
+    }, [])
 
     const particlesLoaded = useCallback(async engine => {
-        console.log(engine);
-    }, []);
+        console.log(engine)
+        await loadFull(engine)
+    })
 
     return (
         <div className="main">
@@ -23,7 +24,7 @@ export default function HomePage() {
                             value: "#202020",
                         },
                     },
-                    fpsLimit: 60,
+                    fpsLimit: 120,
                     interactivity: {
                         events: {
                             onClick: {
@@ -37,11 +38,11 @@ export default function HomePage() {
                         },
                         modes: {
                             push: {
-                                quantity: 4,
+                                quantity: 6,
                             },
                             repulse: {
-                                duration: 0.4,
-                                distance: 200,
+                                duration: 0.6,
+                                distance: 199,
                             },
                         },
                     },
@@ -51,12 +52,13 @@ export default function HomePage() {
                         },
                         links: {
                             color: {
-                                value: "#ffffff",
-                                enable: true,
-                                width: 1,
-                                opacity: 1,
-                                distance: 150,
+                                value: "#f77839", 
                             },
+                            enable: true,
+                            width: 1,
+                            opacity: 1,
+                            distance: 150,
+                           
                         },
                         move: {
                             enable: true,
@@ -65,7 +67,7 @@ export default function HomePage() {
                                 default: "bounce",
                             },
                             random: false,
-                            speed: 3,
+                            speed: 2,
                             straight: false,
                         },
                         collisions: {
