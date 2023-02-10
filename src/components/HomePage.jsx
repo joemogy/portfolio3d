@@ -1,6 +1,8 @@
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import "../css/Homepage.css";
+
 
 export default function HomePage() {
     const particlesInit = useCallback(async engine => {
@@ -58,7 +60,7 @@ export default function HomePage() {
                         collisions: {
                             enable: true, },
                         number: {
-                            value: 66,
+                            value: 33,
                             density: {
                                 enable: true,
                                 area: 800,},},
@@ -73,13 +75,14 @@ export default function HomePage() {
 
 <div className="main">
     <nav>
-        <h1 className="logo">Dev <span>Joseph</span></h1>
+        <h1 className="logo">Dev <span>Joseph Mogavero</span></h1>
             <ul>
-                <li className="icons"></li>
-                <li className="icons"></li>
-                <li className="icons"></li>
-                <li className="icons"></li>
+                <li className="icons">Projects</li>
+                <li className="icons">About</li>
+                <li className="icons">Websites</li>
+                <li className="icons">Work</li>
                 <li className="icons">Certificates</li>
+                <li className="icons">Contact</li>
             </ul>
      </nav>
 </div>
