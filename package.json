@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "My 3d React portfolio website",
-  "homepage": "http://{joemogy}.github.io/{portfolio3d}",
+  "homepage": "http://joemogy.github.io/portfolio3d",
   
   "dependencies": {
     "@react-three/drei": "^9.56.5",
