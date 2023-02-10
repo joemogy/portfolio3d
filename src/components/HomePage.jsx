@@ -13,7 +13,7 @@ export default function HomePage() {
     })
 
     return (
-        <div className="main">
+        <>
             <Particles
                 id="tsparticles"
                 init={particlesInit}
@@ -21,78 +21,68 @@ export default function HomePage() {
                 options={{
                     background: {
                         color: {
-                            value: "#202020",
-                        },
-                    },
+                            value: "#202020",},},
                     fpsLimit: 60,
                     interactivity: {
                         events: {
                             onClick: {
                                 enable: true,
-                                mode: "push",
-                            },
+                                mode: "push",},
                             onHover: {
                                 enable: true,
-                                mode: "repulse",
-                            },
-                        },
+                                mode: "grab",},},
                         modes: {
                             push: {
-                                quantity: 3,
-                            },
-                            repulse: {
+                                quantity: 3,},
+                            grab: {
                                 duration: 0.6,
-                                distance: 199,
-                            },
-                        },
-                    },
-                    particles: {
-                        color: {
-                            value: "#ffffff",
-                        },
+                                distance: 199,},},},
+                        particles: {
+                            color: {
+                                value: "#ffffff",},
                         links: {
                             color: {
-                                value: "#ff1122", 
-                            },
+                                value: "#ff1122",},
                             enable: true,
                             width: 1,
                             opacity: 1,
-                            distance: 233,
-                           
-                        },
+                            distance: 166,},
                         move: {
                             enable: true,
                             direction: "none",
                             outModes: {
-                                default: "bounce",
-                            },
+                                default: "bounce",},
                             random: false,
                             speed: 2,
-                            straight: false,
-                        },
+                            straight: false,},
                         collisions: {
-                            enable: true,
-                        },
+                            enable: true, },
                         number: {
-                            value: 99,
+                            value: 66,
                             density: {
                                 enable: true,
-                                area: 800,
-                            },
-                        },
+                                area: 800,},},
                         shape: {
                             type: "torus",
-                            type: "circle",
-                            
-                        },
+                            type: "circle",},
                         size: {
                             min: 1,
-                            max: 6,
-                        },
-                    },
-                    detectRetina: true,
-                }}
-            />
-        </div>
+                            max: 6,},},
+                        detectRetina: true,}}/>
+        
+
+<div className="main">
+    <nav>
+        <h1 className="logo">Dev <span>Joseph</span></h1>
+            <ul>
+                <li className="icons"></li>
+                <li className="icons"></li>
+                <li className="icons"></li>
+                <li className="icons"></li>
+                <li className="icons">Certificates</li>
+            </ul>
+     </nav>
+</div>
+</>
     );
 }
