@@ -85,7 +85,11 @@ export default function HomePage() {
                 <li className="icons">Contact</li>
             </ul>
      </nav>
+    <div className="content">
+        <h2 className="arrowR "></h2>
+    </div>
 </div>
+
 </>
     );
 }
