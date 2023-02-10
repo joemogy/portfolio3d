@@ -21,7 +21,7 @@ function Links() {
               value: "#0d0d0d",
             },
           },
-          fpsLimit: 120,
+          fpsLimit: 66,
           interactivity: {
             events: {
               onClick: {
@@ -75,10 +75,10 @@ function Links() {
               enable: true,
             },
             number: {
-              value: 65,
+              value: 66,
               density: {
                 enable: true,
-                area: 600,
+                area: 666,
               },
             },
             shape: {
