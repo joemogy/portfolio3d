@@ -1,83 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
- 
+@import './same';
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif; 
+ * {
+     @extend *;
+ }
+
+body {
+    overflow-x: hidden;
+    
 }
 
-#tsparticles{
-    position: relative;
-   z-index: -10;
+#tsparticles {
+    position: fixed;
+    z-index: -10;
 }
 
-.main{
-
-    height: 100vh;
+.main {
     width: 100vw;
-}
-.logo {
-    position: absolute;
-    width: 30%;
+    height: 100vh;
     color: white;
-    font-size: 38px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    padding:  28px 15px;
-    span {
-      color: #ff0090;
+    
+    .logo {
+        font-weight: 900;
+        position: absolute;
+        width: 20%;
+        font-size: 38px;
+        color: white;
+        letter-spacing: 2px;
+        padding: 35px 0px 0px 50px;
+        span {
+            color: #ff4500;
+        }
     }
-nav{
+    nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    color: #fff;
-    justify-content: center;
-ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: #fff;
+    color: white;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    gap: 33px;
-    font-size: 25px;
-    padding: 35px 0px;
-    li {
-      list-style: none;
-      margin: 0 10px;
-      a {
+    
+    ul {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        gap: 50px;
+        font-size: 25px;
+        position: relative;
+        margin-top: 2%;
+
+        a {
         text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 500;
-        letter-spacing: 2px;
-        padding:  28px 15px;
-        transition: all 0.3s ease-in-out;
-        padding: 10px 20px;
-        border-radius: 25px;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .6s ease;
+        padding: 10px 12px 10px 12px;
+        border-radius: 30px;
         cursor: pointer;
         &:hover {
-          background: #ff0090;
-            border-radius: 25px;
-            transform: translateY(-10px)scale(1.1);
+            background: orangered;
+            border-radius: 30px;
+            transform: translateY(-10px) scale(1.1);
             overflow: auto;
-            margin-left: -20px;
+            margin: -40px;   
         }
+        .fa-solid {
+            font-size: 15px;
+    }
+}    
+}
+}
+  .content {
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 4%;
+
+    .arrow {
+        color: orangered;
+        font-size: 130px;
+    }
+    h4 {
+        color: rgb(255, 202, 156);
+        font-weight: 100;
+        font-size: 50px;
+        text-align: left;
+        margin-left: 17%;
+        margin-top: -10%;
+    }
+    h1 {
+        color: whitesmoke;
+        font-size: 75px;
+        text-align: center;
+        font-weight: 900;
+    }
+    h3 {
+        color: orangered;
+        font-weight: 200;
+        position: relative;
+        left: -12%;
+        text-align: center;
+        margin-top: -2%;
+        font-size: 40px;
+    }
+
+    .arrowL {
+        text-align: left;
+        margin-left: 5%;
+      margin-top: 15%;
+
+    }
+    .arrowR {
+        position: absolute;
+        left: 85%;
+        margin-top: -18%;
+    }
+    .download {
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+      padding: 11px 9px;
+      border: 2px solid orangered;
+      border-radius: 50px;
+      text-decoration: none;
+      margin-left: -15%;
+      transition: .4s all linear;
+      &:hover {
+        background-color: orange;
+        color: black;
       }
     }
+    }
+   .imges {
+    .frontimg {
+        position: absolute;
+    top: 21%;
+    width: 30%;
+    height: 65%;
+    left: 60%;
 }
+   }
+  }  
 
-}
-
-
-  }
-  
-  .icons {
-    color: white;
-    font-size: 24px;
-    list-style: none;
-  }

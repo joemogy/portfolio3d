@@ -1,0 +1,139 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 900;
+}
+
+body {
+  scroll-behavior: smooth;
+  scrollbar-width: 12px;
+}
+body::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(62, 13, 0);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border: 2px solid orangered;
+}
+
+.mainContainer #contact {
+  opacity: 0;
+}
+.mainContainer #skills {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  left: 20%;
+  margin-top: 10%;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.mainContainer #skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.mainContainer #skills ul h1 {
+  font-size: 39px;
+  color: whitesmoke;
+}
+.mainContainer #skills ul h1 span {
+  color: orangered;
+}
+.mainContainer #skills ul li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 27px;
+  color: white;
+}
+.mainContainer #skills ul li span {
+  background-color: rgb(255, 219, 153);
+  width: 18px;
+  height: 2px;
+  padding: 1px 2px;
+  margin-top: 6%;
+}
+.mainContainer #skills ul li span:nth-child(2) {
+  background-color: rgb(255, 213, 136);
+}
+.mainContainer #skills ul li span:nth-child(3) {
+  background-color: rgb(255, 200, 99);
+}
+.mainContainer #skills ul li span:nth-child(4) {
+  background-color: rgb(255, 186, 58);
+}
+.mainContainer #skills ul li span:nth-child(5) {
+  background-color: rgb(255, 166, 0);
+}
+.mainContainer #skills ul li h6 {
+  position: relative;
+  font-weight: 300;
+  left: -15%;
+  top: -110%;
+  font-size: 12px;
+}
+.mainContainer .rightBtn {
+  position: absolute;
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  right: 2%;
+  align-items: center;
+  margin-top: 23%;
+  box-shadow: 0 0 0px 8px rgba(255, 123, 0, 0.792);
+  z-index: 99;
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+.mainContainer .rightBtn:hover {
+  box-shadow: 0 0 0px 20px rgba(255, 123, 0, 0.347);
+  transform: scale(1.1);
+}
+.mainContainer .rightBtn .fa-solid {
+  font-size: 40px;
+}
+.mainContainer .leftBtn {
+  opacity: 0;
+  position: absolute;
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  left: 5%;
+  align-items: center;
+  margin-top: 23%;
+  z-index: 99;
+  box-shadow: 0 0 0px 8px rgba(255, 123, 0, 0.792);
+  transition: 0.3s ease-in;
+  transform: scale(0.9);
+}
+.mainContainer .leftBtn:hover {
+  box-shadow: 0 0 0px 20px rgba(255, 123, 0, 0.347);
+  transform: scale(1.1);
+}
+.mainContainer .leftBtn .fa-solid {
+  font-size: 40px;
+}/*# sourceMappingURL=Skills.css.map */

@@ -1,0 +1,32 @@
+* {
+  scroll-behavior: smooth;
+
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 900;
+  }
+  
+body {
+  scroll-behavior: smooth;
+  scrollbar-width: 12px;
+  &::-webkit-scrollbar {
+    border-radius:20px;
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgb(62, 13, 0);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: orangered;
+    border: 2px solid orangered;
+  }
+}
+
+@mixin flex($fd: row, $jc: center, $al: center) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: center;
+}

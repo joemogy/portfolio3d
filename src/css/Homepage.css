@@ -1,10 +1,156 @@
-.main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    color: fuchsia;
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 900;
 }
-  
+
+body {
+  scroll-behavior: smooth;
+  scrollbar-width: 12px;
+}
+body::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(62, 13, 0);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border: 2px solid orangered;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#tsparticles {
+  position: fixed;
+  z-index: -10;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+.main .logo {
+  font-weight: 900;
+  position: absolute;
+  width: 20%;
+  font-size: 38px;
+  color: white;
+  letter-spacing: 2px;
+  padding: 35px 0px 0px 50px;
+}
+.main .logo span {
+  color: #ff4500;
+}
+.main nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.main nav ul {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 50px;
+  font-size: 25px;
+  position: relative;
+  margin-top: 2%;
+}
+.main nav ul a {
+  text-decoration: none;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s ease;
+  padding: 10px 12px 10px 12px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.main nav ul a:hover {
+  background: orangered;
+  border-radius: 30px;
+  transform: translateY(-10px) scale(1.1);
+  overflow: auto;
+  margin: -40px;
+}
+.main nav ul a .fa-solid {
+  font-size: 15px;
+}
+.main .content {
+  position: absolute;
+  width: 40%;
+  text-align: center;
+  margin-top: 1%;
+  margin-left: 4%;
+}
+.main .content .arrow {
+  color: orangered;
+  font-size: 130px;
+}
+.main .content h4 {
+  color: rgb(255, 202, 156);
+  font-weight: 100;
+  font-size: 50px;
+  text-align: left;
+  margin-left: 17%;
+  margin-top: -10%;
+}
+.main .content h1 {
+  color: whitesmoke;
+  font-size: 75px;
+  text-align: center;
+  font-weight: 900;
+}
+.main .content h3 {
+  color: orangered;
+  font-weight: 200;
+  position: relative;
+  left: -12%;
+  text-align: center;
+  margin-top: -2%;
+  font-size: 40px;
+}
+.main .content .arrowL {
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 15%;
+}
+.main .content .arrowR {
+  position: absolute;
+  left: 85%;
+  margin-top: -18%;
+}
+.main .content .download {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 11px 9px;
+  border: 2px solid orangered;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-left: -15%;
+  transition: 0.4s all linear;
+}
+.main .content .download:hover {
+  background-color: orange;
+  color: black;
+}
+.main .imges .frontimg {
+  position: absolute;
+  top: 21%;
+  width: 30%;
+  height: 65%;
+  left: 60%;
+}/*# sourceMappingURL=Homepage.css.map */

@@ -1,0 +1,130 @@
+
+@import './same';
+
+* {
+    @extend *
+}
+
+.mainContainer {
+    #contact {
+        opacity: 0;
+    }
+    #skills {
+        width: 60%;
+        height: 60%;
+        @include flex();
+        gap: 20px;
+        left: 20%;
+        margin-top: 10%;
+        transform: translateX(-100%);
+        opacity: 0;
+    ul {
+        list-style: none;
+        @include flex();
+        flex-direction: column;
+        gap: 20px;
+    
+    h1 {
+        font-size: 39px;
+        color: whitesmoke;
+    span {
+        color: orangered;
+    }
+    }
+    li {
+        @include flex();
+        gap: 5px;
+        font-size: 27px;
+        color: white;
+
+    span {
+        background-color: rgb(255, 219, 153);
+        width: 18px;
+        height: 2px;
+        padding: 1px 2px;
+        margin-top: 6%;
+    &:nth-child(2) {
+        background-color: rgb(255, 213, 136);
+    }
+    &:nth-child(3) {
+        background-color: rgb(255, 200, 99);
+
+    }
+    &:nth-child(4) {
+        background-color: rgb(255, 186, 58);
+
+    }
+    &:nth-child(5) {
+        background-color: rgb(255, 166, 0);
+
+
+    }
+
+    }
+
+    h6 {
+        position: relative;
+        font-weight: 300;
+        left: -15%;
+        top: -110%;
+        font-size: 12px;
+    }
+    
+    }
+
+    }
+    }
+
+    .rightBtn {
+        position: absolute;
+        padding: 20px 20px;
+        background-color: white;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        right: 2%;
+        align-items: center;
+        margin-top: 23%;
+        box-shadow: 0 0 0px 8px rgba(255, 123, 0, 0.792);
+        z-index: 99;
+        transition: .2s;
+        transform: scale(0.9);
+        &:hover {
+            box-shadow: 0 0 0px 20px rgba(255, 123, 0, 0.347);
+            transform: scale(1.1);
+        
+            }
+            .fa-solid {
+                font-size: 40px;
+            }
+            
+        }
+    
+        .leftBtn {
+            opacity: 0;
+            position: absolute;
+            padding: 20px 20px;
+            background-color: white;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            left: 5%;
+            align-items: center;
+            margin-top: 23%;
+            z-index: 99;
+            box-shadow: 0 0 0px 8px rgba(255, 123, 0, 0.792);
+            transition: .3s ease-in;
+            transform: scale(0.9);
+            &:hover {
+                box-shadow: 0 0 0px 20px rgba(255, 123, 0, 0.347);
+                transform: scale(1.1);
+            
+                }
+            .fa-solid {
+                font-size: 40px;
+            }
+                
+        }
+    
+
+    }

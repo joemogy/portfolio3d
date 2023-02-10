@@ -1,0 +1,56 @@
+@import './same';
+
+* {
+    @extend *
+}
+
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background: #090909;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .containerInfo {
+
+        border-radius: 3px;
+        background-color: rgba(143, 143, 143, 0.235);
+        padding: 0px 20px;
+        width: 30%;
+        height:80%;
+        position: absolute;
+        z-index: 999;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        right: 10%;
+        margin-top: 5%;
+        backdrop-filter: blur(12px);
+        box-shadow: 0px 0px 15px 3px rgb(0, 0, 0);
+
+    .image {
+        width: 20%;
+        height: 15%;
+        border-radius: 50px;
+        border: 2px solid orangered;
+        background-position: center center;
+    }
+    h1 {
+        color: white;
+        text-decoration: underline;
+    span {
+        color: orangered;
+    }
+    }
+    h3 {
+        color: white;
+        font-size: 21px;
+        letter-spacing: 1px;
+        font-weight: 400;   
+    }
+}  
+}
