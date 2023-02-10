@@ -10,7 +10,7 @@ export default function HomePage() {
     <div className="main">
     <Links />
         <h1 className="logo">
-          Dev<span>Joseph <Mogavero></Mogavero></span>
+          Dev<span>Joseph Mogavero</span>
         </h1>
         <nav>
           <ul>
